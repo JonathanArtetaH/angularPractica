@@ -1,0 +1,14 @@
+<div class="espacio">
+    <h1>listado de heroes!</h1>
+    <ul>
+        <li *ngFor="let heroe of heroes">{{heroe}}</li>
+    </ul>
+
+    <button (click)="borrarHeroe()">Borrar heroe</button>
+
+    <div *ngIf="muertosheroes != ''">
+        <p>Heroes eliminado:
+            <span>{{muertosheroes}}</span></p>
+
+    </div>
+</div>
